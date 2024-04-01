@@ -18,6 +18,8 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--darkBackground);
   color: white;
+  letter-spacing: 1px;
+  height: 100000px;
 }
 
 /* REUSABLES */
@@ -28,25 +30,57 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
+.mr-16 {
+  margin-right: 16px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
 .text-primary {
   color: var(--primary);
 }
 .text-offwhite {
   color: var(--offWhite);
 }
-.btn-primary {
+.btn {
   text-decoration: none;
-  color: var(--darkGreen);
-  background-color: var(--primary);
   padding: 12px 32px;
   border-radius: 12px;
   font-weight: 600;
+}
+.btn-primary {
+  color: var(--darkGreen);
+  background-color: var(--primary);
+}
+.btn-secondary {
+  color: white;
+  border: 1px solid var(--primary);
+}
+
+/* NAVBAR */
+nav {
+  height: 128px;
+  position: fixed;
+  top: 0;
+  background-color: var(--darkBackground);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo {
+  height: 48px;
+}
+#nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 24px;
 }
 
 /* HERO SECTION */
 #hero-section {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 208px;
   display: flex;
   flex-direction: column;
 }
@@ -54,11 +88,9 @@ body {
   text-align: center;
   font-size: 88px;
   font-weight: 500;
-  letter-spacing: 2px;
 }
 #hero-subtitle {
   line-height: 24px;
-  letter-spacing: 0.3px;
   max-width: 480px;
   margin: auto;
   padding: 20px 0px 20px 0px;
