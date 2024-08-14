@@ -18,13 +18,18 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: var(--darkBackground);
   color: white;
   letter-spacing: 1px;
-  padding-bottom: 1000px;
+  /* padding-bottom: 1000px; */
 }
-
+h2 {
+  font-weight: 600;
+}
+hr {
+  border: 1px solid black;
+}
 section {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -35,6 +40,13 @@ section {
 *****/
 .text-center {
   text-align: center;
+}
+.text-20 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.text-64 {
+  font-size: 64px;
 }
 .container {
   width: 100%;
@@ -56,8 +68,21 @@ section {
 .mt-24 {
   margin-top: 24px;
 }
+.mt-40 {
+  margin-top: 40px;
+}
 .mr-16 {
   margin-right: 16px;
+}
+.pt-48 {
+  padding-top: 48px;
+}
+.pb-40 {
+  padding-bottom: 40px;
+}
+.py-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 .py-24 {
   padding-top: 24px;
@@ -67,17 +92,29 @@ section {
   display: flex;
   align-items: center;
 }
+.gap-8 {
+  gap: 8px;
+}
 .gap-24 {
   gap: 24px;
 }
 .justify-between {
   justify-content: space-between;
 }
+.justify-center {
+  justify-content: center;
+}
 .items-center {
   align-items: center;
 }
+.items-start {
+  align-items: start;
+}
 .text-primary {
   color: var(--primary);
+}
+.text-white {
+  color: white;
 }
 .text-black {
   color: black;
@@ -87,6 +124,9 @@ section {
 }
 .text-offwhite {
   color: var(--offWhite);
+}
+.text-darkGreen {
+  color: var(--darkGreen);
 }
 .bg-primary {
   background-color: var(--primary);
@@ -110,6 +150,7 @@ section {
 }
 .btn-secondary {
   color: white;
+  background-color: transparent;
   border: 1px solid var(--primary);
 }
 .btn-tertiary {
@@ -145,6 +186,17 @@ section {
 }
 .grid-item {
   max-width: 100% !important;
+}
+.links {
+  list-style: none;
+  padding: 0;
+}
+.links li {
+  padding: 10px 0px;
+}
+.a-nostyle {
+  text-decoration: none;
+  color: inherit;
 }
 
 /*****
@@ -224,6 +276,7 @@ section {
   background-color: var(--darkGrey);
   padding: 24px;
   border-radius: 12px;
+  z-index: 1;
 }
 .hero-card img {
   width: 24px;
@@ -259,7 +312,7 @@ section {
   position: relative;
 }
 .image-container:before {
-  content: '';
+  content: "";
   width: 90%;
   height: 100%;
   position: absolute;
