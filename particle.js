@@ -1,10 +1,10 @@
-particlesJS("particles-js", {
+particlesJS('particles-js', {
   particles: {
     number: { value: 24, density: { enable: true, value_area: 1000 } },
-    color: { value: "#6de754" },
+    color: { value: '#6de754' },
     shape: {
-      type: "circle",
-      stroke: { width: 0, color: "#000000" },
+      type: 'circle',
+      stroke: { width: 0, color: '#000000' },
       polygon: { nb_sides: 5 },
     },
     opacity: {
@@ -20,26 +20,26 @@ particlesJS("particles-js", {
     line_linked: {
       enable: true,
       distance: 150,
-      color: "#6DE754",
+      color: '#fff',
       opacity: 0.3,
       width: 1,
     },
     move: {
       enable: true,
       speed: 6,
-      direction: "none",
+      direction: 'none',
       random: false,
       straight: false,
-      out_mode: "out",
+      out_mode: 'out',
       bounce: false,
       attract: { enable: false, rotateX: 600, rotateY: 1200 },
     },
   },
   interactivity: {
-    detect_on: "canvas",
+    detect_on: 'canvas',
     events: {
-      onhover: { enable: true, mode: "repulse" },
-      onclick: { enable: true, mode: "push" },
+      onhover: { enable: false, mode: 'repulse' },
+      onclick: { enable: false, mode: 'push' },
       resize: true,
     },
     modes: {
@@ -55,11 +55,11 @@ particlesJS("particles-js", {
 var count_particles, stats, update;
 stats = new Stats();
 stats.setMode(0);
-stats.domElement.style.position = "absolute";
-stats.domElement.style.left = "0px";
-stats.domElement.style.top = "0px";
+stats.domElement.style.position = 'absolute';
+stats.domElement.style.left = '0px';
+stats.domElement.style.top = '0px';
 document.body.appendChild(stats.domElement);
-count_particles = document.querySelector(".js-count-particles");
+count_particles = document.querySelector('.js-count-particles');
 update = function () {
   stats.begin();
   stats.end();

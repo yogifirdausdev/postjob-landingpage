@@ -28,25 +28,28 @@
     <!-- NAVBAR -->
     <nav class="bg-darkGrey navbar" id="navbar">
       <div class="container flex justify-between mx-auto">
-        <div class="flex">
-          <a href="#">
-            <img id="logo" src="assets/logo.svg" alt="Logo" />
-          </a>
-          <ul id="nav-links" class="text-offwhite">
+        <a href="#">
+          <img id="logo" src="assets/logo.svg" alt="Logo" />
+        </a>
+        <div id="nav-links">
+          <ul class="text-offwhite">
             <li class="hover_text-white">AI Cover Letter Generator</li>
             <li class="hover_text-white">Resume Template</li>
             <li class="hover_text-white">Pricing</li>
           </ul>
+
+          <div id="nav-buttons">
+            <a class="btn btn-secondary mr-16" href="#">Sign In</a>
+            <a class="btn btn-primary" href="#">Get Started</a>
+          </div>
         </div>
 
-        <div>
-          <a class="btn btn-secondary mr-16" href="#">Sign In</a>
-          <a class="btn btn-primary" href="#">Get Started</a>
-        </div>
         <!-- Hamburger button -->
-        <a href="javascript:void(0)" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars text-white"></i>
-        </a>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </div>
     </nav>
 
@@ -121,9 +124,9 @@
 
     <!-- SPEND LESS SECTION -->
     <section id="spendLess-section" class="container">
-      <div class="text-center w-420 mx-auto">
+      <div class="text-center mx-auto">
         <h2 class="section-title">Spend less time looking for work</h2>
-        <p class="subtitle text-offwhite my-1">
+        <p class="subtitle text-offwhite mx-auto my-1">
           We'll help you through the hardest part of your job search.
         </p>
         <a href="#" class="btn btn-secondary">Create an account</a>
@@ -185,7 +188,7 @@
 
     <!-- AI OPTIMIZATION SECTION -->
     <section id="aiOptimization-section" class="bg-primary text-black">
-      <div class="container flex py-24">
+      <div id="ai-coverLetter" class="container flex py-24">
         <div class="w-50">
           <h2 class="section-title">
             Free AI cover letter generator powered by GPT
@@ -204,7 +207,7 @@
         />
       </div>
 
-      <div class="container flex py-24">
+      <div id="ai-optimize" class="container flex py-24">
         <img
           src="assets/optimization-illustration.png"
           alt="AI Illustration"
@@ -261,7 +264,10 @@
           </a>
         </div>
         <!-- FOOTER | links -->
-        <div class="text-black flex items-start justify-between mt-40">
+        <div
+          id="footer-links"
+          class="text-black flex items-start justify-between mt-40"
+        >
           <div id="platform">
             <p class="text-20 py-16">Platform</p>
             <ul class="links">
@@ -305,13 +311,18 @@
           </div>
         </div>
         <hr class="mt-40" />
-        <div class="mt-40 text-darkGreen">
+        <div id="copyright" class="mt-40 text-darkGreen">
           <div class="flex justify-center gap-8">
             <p class="mr-16">©</p>
             <a href="#" class="a-nostyle">Copywriting </a> |
             <a href="#" class="a-nostyle">All Rights Reserved </a> |
             <a href="#" class="a-nostyle">Terms of Use</a> |
-            <a href="#" class="a-nostyle">Privacy</a>
+            <a href="#" class="a-nostyle">Privacy</a> |
+            <a
+              href="https://www.figma.com/community/file/1325928372652466207"
+              class="a-nostyle"
+              >Design by: Casey Spirid</a
+            >
           </div>
         </div>
       </div>
@@ -322,5 +333,6 @@
     <!-- stats.js lib -->
     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
     <script src="particle.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
